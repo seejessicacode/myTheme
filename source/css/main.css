@@ -14,7 +14,7 @@ a img:hover {
   filter:alpha(opacity=50); /* For IE8 and earlier */
 }
 
-.title, .title a, .title a:hover, .title a:visited {
+.sitetitle, .sitetitle a, .sitetitle a:hover, .sitetitle a:visited {
 	font-family: fairy_strangeregular;
 	font-weight: normal;
 	font-size: 2.25em;
