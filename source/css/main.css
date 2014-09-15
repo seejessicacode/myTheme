@@ -26,3 +26,11 @@ a img:hover {
 span.icon{
 	padding-right: 35px;
 }
+
+pre {
+  white-space: pre;
+}
+
+.article-entry pre, .article-entry .highlight {
+  overflow: auto;
+}
