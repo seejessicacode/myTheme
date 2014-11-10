@@ -24,8 +24,7 @@
   		<%- partial('post/tag') %>
   	</div>
   </div>
-  <% if (!index){ %>
+  <% if (!index && post.comments && config.disqus_shortname){ %>
     <%- partial('post/comment') %>
-    <p>not an index</p>
   <% } %>
 </article>
