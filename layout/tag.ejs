@@ -1,1 +1,8 @@
-<%- partial('_partial/archive', {pagination: config.tag, index: true}) %>
+<h2>Posts tagged "<%- page.tag %>"</h2>
+<% if (page.posts && page.posts.length) { %>
+  <ul>
+  <% page.posts.each(function(p) { %>
+    <li><span><%- date(p.date, config.date_format) %></span> &raquo; <a href="<%- url_for(p.path) %>"><%- p.title %></a></li>
+  <% }) %>
+  </ul>
+<% } %>
